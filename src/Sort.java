@@ -10,23 +10,24 @@ public class Sort {
             System.out.print(i + " ");
         }
         System.out.println();
+        System.out.println("======================");
 
         //Bubble sort
-        for(int i=0; i<arr.length-1; ++i){
-            for(int j=0;j<arr.length - 1 - i; ++j){
-                if(arr[j] > arr[j+1]){
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
-                }
-            }
-        }
-        System.out.println("After bubble sort: ");
-        for(int num : arr){
-            System.out.print(num + " ");
-        }
-        System.out.println();
-
+//        for(int i=0; i<arr.length-1; ++i){
+//            for(int j=0;j<arr.length - 1 - i; ++j){
+//                if(arr[j] > arr[j+1]){
+//                    int temp = arr[j];
+//                    arr[j] = arr[j+1];
+//                    arr[j+1] = temp;
+//                }
+//            }
+//        }
+//        System.out.println("After bubble sort: ");
+//        for(int num : arr){
+//            System.out.print(num + " ");
+//        }
+//        System.out.println();
+//
         // selection sort
         for(int i=0; i < arr.length -1; i++){
             int minIndex = i;
@@ -44,6 +45,26 @@ public class Sort {
         }
         //after sort
         System.out.println("After selection sort: ");
+        for(int num : arr){
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        //reverse sorted array
+        //two pointer
+        int start =0;
+        int end = arr.length-1;
+
+        while (start < end){
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            ++start;
+            --end;
+        }
+
+        //after revers
+        System.out.println("After revers by two pointer:");
         for(int num : arr){
             System.out.print(num + " ");
         }
