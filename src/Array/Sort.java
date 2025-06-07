@@ -27,7 +27,7 @@ public class Sort {
 //            System.out.print(num + " ");
 //        }
 //        System.out.println();
-//
+
         // selection sort
         for(int i=0; i < arr.length -1; i++){
             int minIndex = i;
