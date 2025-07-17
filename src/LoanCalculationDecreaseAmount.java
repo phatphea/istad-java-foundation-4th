@@ -4,7 +4,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
 
-import static com.google.common.base.Strings.repeat;
+//import static com.google.common.base.Strings.repeat;
 
 public class LoanCalculationDecreaseAmount {
 
@@ -54,7 +54,7 @@ public class LoanCalculationDecreaseAmount {
         System.out.println(padRight("Month", 12) + padRight("Installment", 15) +
                 padRight("Principal", 12) + padRight("Interest", 12) +
                 padRight("Debt Balance", 15));
-        System.out.println(repeat("-", 66));
+//        System.out.println(repeat("-", 66));
 
         debtBalance = loan;
         principal = loan/monthLoan;
@@ -78,7 +78,7 @@ public class LoanCalculationDecreaseAmount {
                                 padRight(cf.format(debtBalance), 15,'-')
                 );
         }
-        System.out.println(repeat("=", 66));
+//        System.out.println(repeat("=", 66));
         System.out.println("Total Interest      =" + cf.format(totalInterest));
         System.out.println("Total Installment   =" + cf.format(totalInstallment));
     }

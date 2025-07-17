@@ -1,10 +1,7 @@
 <component name="libraryTable">
   <library name="android.tools.external.lombok.ast" type="repository">
     <properties maven-id="com.android.tools.external.lombok:lombok-ast:0.2.2" />
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/lombok-ast-0.2.2.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/guava-15.0.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>

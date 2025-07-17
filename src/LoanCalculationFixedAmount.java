@@ -27,7 +27,7 @@ public class LoanCalculationFixedAmount {
         double monthlyInterestRate = interestRate / 100;
         installment = (loanAmount * monthlyInterestRate) / (1 - Math.pow((1 + monthlyInterestRate), -month)); //month 1 to n-1
 
-        // Print table header
+        // Print newfeatures.table header
         System.out.printf("%-15s %-14s %-13s %-11s %-11s%n",
                 "Month", "Installment", "Principal", "Interest", "Debt Balance");
 
